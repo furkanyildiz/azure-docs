@@ -9,6 +9,8 @@ ms.date: 01/24/2024
 ---
 
 # Use a managed identity in Azure Kubernetes Service (AKS)
+> [!WARNING]
+> As of October 24, 2022, AAD Pod Identity has been deprecated, and it has been replaced with [Azure Workload Identity](workload-identity-overview.md).
 
 Azure Kubernetes Service (AKS) clusters require an identity to access Azure resources like load balancers and managed disks. This identity can be a *managed identity* or *service principal*. A system-assigned managed identity is automatically created when you create an AKS cluster. This identity is managed by the Azure platform and doesn't require you to provision or rotate any secrets. For more information about managed identities in Microsoft Entra ID, see [Managed identities for Azure resources][managed-identity-resources-overview].
 
